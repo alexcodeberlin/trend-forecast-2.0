@@ -1,0 +1,4 @@
+2026-04-30 19:34:55,497 - AuditLogger - INFO - User: Alex | Action: REGISTER | Status: FAILURE | Details: Password too short
+2026-04-30 19:35:03,969 - AuditLogger - INFO - User: Alex | Action: REGISTER | Status: SUCCESS | Details: User registered successfully!
+2026-04-30 19:35:17,595 - AuditLogger - INFO - User: Alex | Action: LOGIN | Status: FAILURE | Details: Incorrect password
+2026-04-30 19:35:20,319 - AuditLogger - INFO - User: Alex | Action: LOGIN | Status: SUCCESS | Details: User authenticated

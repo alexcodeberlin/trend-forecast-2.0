@@ -1,0 +1,12 @@
+streamlit
+pandas
+matplotlib
+prophet
+elasticsearch-dsl
+mysql-connector-python
+tweepy
+textblob
+nltk
+emoji
+python-dotenv
+argon2-cffi
