@@ -7,9 +7,13 @@ class AnalysisService:
     def __init__(self, es_repo):
         self.es_repo = es_repo
 
-    def get_forecast(self, df, periods, freq="30S"):
+    def get_forecast(self, df, seconds, freq="30S"):
         if df.empty:
             return pd.DataFrame()
+        
+        # Calculate number of periods based on freq (30S)
+        periods = int(seconds / 30)
+        
         model = Prophet()
         model.fit(df)
         future = model.make_future_dataframe(periods=periods, freq=freq)
@@ -26,7 +30,7 @@ class AnalysisService:
             hashtags = re.findall(r"#\w+", text)
             for tag in hashtags:
                 hashtag_engagement[tag.lower()].append(engagement)
-
+        
         table_data = [{"Hashtag": tag, "Avg Engagement": sum(vals) / len(vals)} for tag, vals in hashtag_engagement.items() if vals]
         df = pd.DataFrame(table_data).sort_values("Avg Engagement", ascending=False)
         return df

@@ -9,7 +9,7 @@ class ElasticsearchRepository:
         }
         if settings.ES_USER and settings.ES_PASSWORD:
             connection_params["http_auth"] = (settings.ES_USER, settings.ES_PASSWORD)
-
+        
         if settings.ES_USE_SSL:
             connection_params["use_ssl"] = True
             connection_params["verify_certs"] = settings.ES_VERIFY_CERTS

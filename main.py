@@ -29,7 +29,7 @@ def main():
     # Initialize repositories
     twitter_repo = TwitterRepository()
     es_repo = ElasticsearchRepository()
-
+    
     # Initialize services
     twitter_service = TwitterService(twitter_repo)
 

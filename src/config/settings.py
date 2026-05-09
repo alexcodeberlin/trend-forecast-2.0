@@ -18,7 +18,7 @@ class Settings:
     MYSQL_SSL_KEY = os.getenv("MYSQL_SSL_KEY")
 
     # Elasticsearch
-    ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
+    ES_HOST = os.getenv("ES_HOST", "https://localhost:9200")
     ES_INDEX = "twitter_datav7"
     ES_USER = os.getenv("ES_USER")
     ES_PASSWORD = os.getenv("ES_PASSWORD")
