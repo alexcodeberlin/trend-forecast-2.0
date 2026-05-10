@@ -1,0 +1,7 @@
+2026-04-30 19:34:55,497 - AuditLogger - INFO - User: Alex | Action: REGISTER | Status: FAILURE | Details: Password too short
+2026-04-30 19:35:03,969 - AuditLogger - INFO - User: Alex | Action: REGISTER | Status: SUCCESS | Details: User registered successfully!
+2026-04-30 19:35:17,595 - AuditLogger - INFO - User: Alex | Action: LOGIN | Status: FAILURE | Details: Incorrect password
+2026-04-30 19:35:20,319 - AuditLogger - INFO - User: Alex | Action: LOGIN | Status: SUCCESS | Details: User authenticated
+2026-05-02 22:42:41,761 - AuditLogger - INFO - User: alexund | Action: REGISTER | Status: FAILURE | Details: Invalid email: alexundgmail.com
+2026-05-02 22:42:49,271 - AuditLogger - INFO - User: alexund | Action: REGISTER | Status: FAILURE | Details: Password too short
+2026-05-02 22:42:57,935 - AuditLogger - INFO - User: alexund | Action: REGISTER | Status: FAILURE | Details: Database Error: Invalid Certificate/Key: [Errno 2] No such file or directory
